@@ -2,4 +2,4 @@
 
 # EVTOL battery sizing and energy consumption estimation
 
-This repo accompanies the working paper, The promise of energy-efficient battery-powered urban aircraft https://arxiv.org/abs/2106.09513
+This repo accompanies the working paper "[The promise of energy-efficient battery-powered urban aircraft](https://arxiv.org/abs/2106.09513)" by Shashank Sripad and Venkat Viswanathan. (2021)
