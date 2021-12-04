@@ -9,7 +9,8 @@ This repo accompanies the paper "[The promise of energy-efficient battery-powere
 > We spoke to the Beta Technologies team who provided additional inputs. See the [LinkedIn update post](https://www.linkedin.com/posts/ssripad_were-thrilled-by-all-the-feedback-and-discussions-activity-6871141765634699264-3xaM).
 
 #### Nov 20, 2021
-> Mark Moore, pioneer of Distributed Electric Propulsion and revered aerospace engineer [posted](https://www.linkedin.com/posts/mark-moore-99582787_while-others-have-focused-on-the-emissions-activity-6867855419902099458-IPUf) about the paper.
+> [Mark Moore](https://www.linkedin.com/in/mark-moore-99582787/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABJ0JsEBBhojAWp_v_kPEA5UB4FAjDB42e4), pioneer of Distributed Electric Propulsion and revered aerospace engineer [posted](https://www.linkedin.com/posts/mark-moore-99582787_while-others-have-focused-on-the-emissions-activity-6867855419902099458-IPUf) about the paper.
+>> [Daniel Raymer](https://g.co/kgs/cQfVaJ) [commented](https://www.linkedin.com/feed/update/urn:li:activity:6867855419902099458?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A6867855419902099458%2C6867885475592568832%29) about it!
 
 #### Nov 5, 2021
 > The paper was covered in [Big Think](https://bigthink.com/the-future/flying-cars-evtol-aircraft/) by Ross Pomeroy.
