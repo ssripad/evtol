@@ -5,6 +5,12 @@
 This repo accompanies the paper "[The promise of energy-efficient battery-powered urban aircraft](https://doi.org/10.1073/pnas.2111164118)" by Shashank Sripad and Venkat Viswanathan. _Proceedings of the National Academy of Sciences_, November 9, 2021 118 (45) e2111164118.
 
 ### News
+#### Dec 16, 2021
+> Figure 2 from the paper which shows the battery requirements for various EVTOL aircraft was featured in a Forbes [story](https://www.forbes.com/sites/jeremybogaisky/2021/12/16/beta-technologies-amazon-ups-evtol/?ss=entrepreneurs&sh=3fa334762c24) about Beta Technologies
+
+#### Dec 14, 2021
+> The paper was mentioned in a [story](https://evtol.com/features/elon-musk-supersonic-electric-vtol-jet/) on eVTOL.com
+
 #### Nov 29, 2021
 > We spoke to the Beta Technologies team who provided additional inputs. See the [LinkedIn update post](https://www.linkedin.com/posts/ssripad_were-thrilled-by-all-the-feedback-and-discussions-activity-6871141765634699264-3xaM).
 
