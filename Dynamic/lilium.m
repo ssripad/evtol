@@ -1,5 +1,4 @@
 function [whpm,range,packmission,peakp] = lilium(mile,numPax,AeroProps,MissionProps)
-% addpath('/Users/ssripad/Box Sync/Projects/Electric Aircarft/PNAS_BR/Model') 
 
 %% Initialize lilium
 % AeroProps           = readtable('lilium_param.csv');

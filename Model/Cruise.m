@@ -7,17 +7,17 @@ S                          = MTOM./area_load;
 [Tc, Sc, Pc, Dc]           = Tatmos(Hc,TGL,PGL,DGL);
 
 if speed<=sqrt(2.*W_TO./Dc./S.*sqrt(K./cd0))
-CruiseOutput.startVelocity = sqrt(2.*W_TO./Dc./S.*sqrt(K./cd0)); %for max range
-CruiseOutput.endVelocity   = CruiseOutput.startVelocity;
-
-CruiseOutput.startPower    = W_TO ./(LD) .* CruiseOutput.startVelocity./ Ncru ./1000; % Kw 
-CruiseOutput.endPower      = W_TO ./(LD) .* CruiseOutput.endVelocity./ Ncru ./1000; % Kw 
-else
 CruiseOutput.startVelocity = speed;
 CruiseOutput.endVelocity   = CruiseOutput.startVelocity;
 
 CruiseOutput.startPower    = W_TO ./(0.85*LD) .* CruiseOutput.startVelocity./ Ncru ./1000; % Kw 
-CruiseOutput.endPower      = W_TO ./(0.85*LD) .* CruiseOutput.endVelocity./ Ncru ./1000; % Kw 
+CruiseOutput.endPower      = W_TO ./(0.85*LD) .* CruiseOutput.endVelocity./ Ncru ./1000; % Kw
+else
+CruiseOutput.startVelocity = sqrt(2.*W_TO./Dc./S.*sqrt(K./cd0)); %for max range
+CruiseOutput.endVelocity   = CruiseOutput.startVelocity;
+
+CruiseOutput.startPower    = W_TO ./(LD) .* CruiseOutput.startVelocity./ Ncru ./1000; % Kw 
+CruiseOutput.endPower      = W_TO ./(LD) .* CruiseOutput.endVelocity./ Ncru ./1000; % Kw  
 end
 
 CruiseOutput.startTemp     = Tc;

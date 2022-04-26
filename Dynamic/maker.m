@@ -1,5 +1,4 @@
 function [whpm,range,packmission,peakp] = maker(mile,numPax,AeroProps,MissionProps)
-% addpath('/Users/ssripad/Box Sync/Projects/Electric Aircarft/PNAS_BR/Model') 
 
 %% Initialize maker
 % AeroProps           = readtable('maker_param.csv');

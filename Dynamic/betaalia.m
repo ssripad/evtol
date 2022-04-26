@@ -1,5 +1,4 @@
 function [whpm,range,packmission,peakp] = betaalia(mile,numPax,AeroProps,MissionProps)
-% addpath('/Users/ssripad/Box Sync/Projects/Electric Aircarft/PNAS_BR/Model') 
 
 %% Initialize betaalia
 % AeroProps           = readtable('betaalia_param.csv');

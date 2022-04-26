@@ -1,10 +1,11 @@
 clear
 close all
-load('/Users/ssripad/Box Sync/Projects/Electric Aircarft/PNAS_BR/zla_colors.mat')
-addpath('/Users/ssripad/Box Sync/Projects/Electric Aircarft/PNAS_BR/Model') 
+
+lpath = pwd;
+addpath('../Model')
 
 %% Initialize lilium
-AeroProps           = readtable('lilium_param.csv');
+AeroProps           = readtable([lpath,'lilium_param.csv']);
 AeroProps.K         = 1./(4.*AeroProps.cd0.*AeroProps.LD.^2);
 
 %% Global assumptions
@@ -15,7 +16,7 @@ AtmosPropsGood      = atm(1);
 AtmosPropsBad       = atm(2);
 
 %% Initialize mission
-MissionProps        = readtable('lilium_mission.csv');
+MissionProps        = readtable([lpath,'lilium_mission.csv']);
 
 %% Run the model
 [Mission,~,~]       = BasicMission(AeroProps, MissionProps, AtmosPropsGood);
@@ -38,4 +39,4 @@ results.peakp       = Mission.PowerkW(1); %kW
 results.packmission = ((AeroProps.Range./1.6e3).*results.whpm)./1e3; %kWh
 results.packreserve = results.packmission+(Reserve.EnergykWh(end)-Mission.EnergykWh(end));
 resultscsv          = struct2table(results);
-writetable(resultscsv,'lilium_results.csv');
+writetable(resultscsv,[lpath,'/lilium_results.csv']);

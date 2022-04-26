@@ -1,5 +1,5 @@
-function [TransitionUpOutput] = TransUp(f, cd0, FM, K, area_load, disk_load, Nhov, Ncli, ...
-    H0, tup, Vv, MTOM, TGL, PGL, DGL)
+function [TransitionUpOutput] = TransUp(f, cd0, FM, K, area_load, disk_load, Nhov, Ncli,...
+    H0, tup, Vv, MTOM, TGL, PGL, DGL, rotortype)
 W_TO                                =   MTOM*9.8;
 A                                   =   MTOM./disk_load; 
 S                                   =   MTOM./area_load;
@@ -9,7 +9,14 @@ S                                   =   MTOM./area_load;
 TransitionUpOutput.endVelocity      =   sqrt(2.*W_TO./D0./S.*sqrt(K./3./cd0));
 TransitionUpOutput.startVelocity    =   0;
 TransitionUpOutput.time             =   tup;
-TransitionUpOutput.startPower       =   (f.*W_TO./FM.*sqrt(f.*W_TO./(2.*D0.*A)))./Nhov./1000; % kW
+
+if strcmpi(rotortype,'openrotor')
+    TransitionUpOutput.startPower    = (f.*W_TO./FM.*sqrt(f.*W_TO./(2.*D0.*A)))./Nhov./1000; % kW
+end
+if strcmpi(rotortype,'ductedfan')
+    TransitionUpOutput.startPower      = (f.*W_TO./(2.*FM).*sqrt(f.*W_TO./(D0.*A)))./Nhov./1000; % kW
+end
+
 TransitionUpOutput.endPower         =    (W_TO.*Vv+(1/2).*D0.*TransitionUpOutput.endVelocity.^3.*S.*cd0 + ...
                                         ( (K*W_TO.^2) ./ ((1/2).*D0.*TransitionUpOutput.endVelocity.*S))) ...
                                         ./ Ncli./1000; % Kw  

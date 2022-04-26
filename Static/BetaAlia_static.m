@@ -1,7 +1,7 @@
 clear
 close all
 load('/Users/ssripad/Box Sync/Projects/Electric Aircarft/PNAS_BR/zla_colors.mat')
-addpath('/Users/ssripad/Box Sync/Projects/Electric Aircarft/PNAS_BR/Model') 
+addpath('/Users/ssripad/Box Sync/Projects/Electric Aircarft/Lilium_discussion/evtol-main/Model') 
 
 %% Initialize betaalia
 AeroProps           = readtable('betaalia_param.csv');

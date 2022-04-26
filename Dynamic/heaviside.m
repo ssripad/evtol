@@ -1,5 +1,4 @@
 function [whpm,range,packmission,peakp] = heaviside(mile,numPax,AeroProps,MissionProps)
-% addpath('/Users/ssripad/Box Sync/Projects/Electric Aircarft/PNAS_BR/Model') 
 
 %% Initialize heaviside
 % AeroProps           = readtable('heaviside_param.csv');

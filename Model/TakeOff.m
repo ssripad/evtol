@@ -10,8 +10,8 @@ Hg                          = 0;
 
 
 if strcmpi(rotortype,'openrotor')
-TakeOffOutput.startPower    = (f.*W_TO./FM.*sqrt(f.*W_TO./(2.*D0.*A)))./Nhov./1000; % kW
-TakeOffOutput.endPower      = (f.*W_TO./FM.*sqrt(f.*W_TO./(2.*Dg.*A)))./Nhov./1000; % kW
+TakeOffOutput.startPower    = (f.*W_TO./FM.*sqrt(f.*W_TO./(2.*Dg.*A)))./Nhov./1000; % kW
+TakeOffOutput.endPower      = (f.*W_TO./FM.*sqrt(f.*W_TO./(2.*D0.*A)))./Nhov./1000; % kW
 end
 
 if strcmpi(rotortype,'ductedfan')

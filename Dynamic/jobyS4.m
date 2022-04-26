@@ -1,5 +1,4 @@
 function [whpm,range,packmission,peakp] = jobyS4(mile,numPax,AeroProps,MissionProps)
-% addpath('/Users/ssripad/Box Sync/Projects/Electric Aircarft/PNAS_BR/Model') 
 
 %% Initialize jobys4
 % AeroProps           = readtable('jobys4_param.csv');

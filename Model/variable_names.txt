@@ -1,0 +1,55 @@
+%% Aero params
+% %Joby
+%  f           = 1.03;
+%  cd0         = 0.015;
+%  FM          = 0.6;
+%  LD          = 18;
+%  K           = 0.55*1./(4.* cd0.* LD.^2); % I can prove this
+%  we_wmax     = 0.55;
+%  area_load   = 100;
+%  disk_load   = 100;
+%  Nprop       = 0.9;
+%  Nmech       = 0.9;
+
+% %KHH
+%  f           = 1.03;
+%  cd0         = 0.015;
+%  FM          = 0.8;
+%  LD          = 16;
+%  K           = 0.55*1./(4.* cd0.* LD.^2); % I can prove this
+%  we_wmax     = 0.55;
+%  area_load   = 75;
+%  disk_load   = 80;
+%  Nprop       = 0.92;
+%  Nmech       = 0.9;
+
+% %Lilium
+ f           = 1.03;
+ cd0         = 0.015;
+ FM          = 0.6;
+ LD          = 18;
+ K           = 0.55*1./(4.* cd0.* LD.^2); % I can prove this
+ we_wmax     = 0.55;
+ area_load   = 100;
+ disk_load   = 1000;
+ Nprop       = 0.9;
+ Nmech       = 0.9;
+
+%% Mission Params
+ VC     =   0.5; % Vertical Climb Velocity (m/s) NASA
+ H0     =   15;  % Vertical Take-Off AGL  NASA
+% Assign Hover / Transition from Vertical Variables
+ tup    =   90; % Hover Up Time (s) 90 vahana, 120 mi
+% Assign Aircraft Climb Variables
+ Vv     =   4.3; % Climb Rate (m/s) NASA paper
+% Assign Cruise Variables
+ Hc     =   450; % Cruise AGL
+% Assign Descent Variables
+ VD     =   1.4; % Aircraft Descent Rate (m/s)
+% Assign Hover / Transition from Aircraft Flight Variables
+ tdn    =   120; % Hover Down Time (s) 90 vahana, 120 mit
+% Assign Vertical Descent Variables
+ VDVL   =   0.4; % Vertical Descent Velocity (m/s) NASA
+% Assign Reserve Variables
+ Hr     =   300; % Reserve AGL
+ tr     =   45*60;% Reserve time [s] FAR 23  

@@ -1,5 +1,5 @@
 function [TransitionDownOutput] = TransDown(f, cd0, FM, K, area_load, disk_load, Ncli, Nhov, ...
- H0, tdn, VD, MTOM, TGL, PGL, DGL)
+ H0, tdn, VD, MTOM, TGL, PGL, DGL, rotortype)
 
 W_TO                                =   MTOM*9.8;
 A                                   =   MTOM./disk_load; 
@@ -10,10 +10,16 @@ S                                   =   MTOM./area_load;
 TransitionDownOutput.startVelocity  =   sqrt(2.*W_TO./D0./S.*sqrt(K./3./cd0));
 TransitionDownOutput.endVelocity    =   0;
 TransitionDownOutput.time           =   tdn;
-TransitionDownOutput.endPower       = 	(f.*W_TO./FM.*sqrt(f.*W_TO./(2.*D0.*A)))./Nhov./1000; % kW
-TransitionDownOutput.startPower     =  	(W_TO.*-VD+(1/2).*D0.*TransitionDownOutput.startVelocity.^3.*S.*cd0 + ...
-                                        ((K*W_TO.^2)./((1/2).*D0.*TransitionDownOutput.startVelocity.*S))) ...
-                                        ./ Ncli./1000; % Kw  
+if strcmpi(rotortype,'openrotor')
+    TransitionDownOutput.endPower    = (f.*W_TO./FM.*sqrt(f.*W_TO./(2.*D0.*A)))./Nhov./1000; % kW
+end
+if strcmpi(rotortype,'ductedfan')
+    TransitionDownOutput.endPower      = (f.*W_TO./(2.*FM).*sqrt(f.*W_TO./(D0.*A)))./Nhov./1000; % kW
+end
+
+TransitionDownOutput.startPower     =  	W_TO.*-VD./1000 + ...
+                                        (1/2).*D0.*TransitionDownOutput.startVelocity.^3.*S.*cd0./1000./Ncli + ...
+                                        ( (K*W_TO.^2) ./ ((1/2).*D0.*TransitionDownOutput.startVelocity.*S) )./1000./Ncli; % Kw 
 TransitionDownOutput.energy         =  	(TransitionDownOutput.startPower+TransitionDownOutput.endPower)./2 .* ...
                                         TransitionDownOutput.time./3600; % kWh
                             
