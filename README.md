@@ -6,7 +6,7 @@ This repo accompanies the paper "[The promise of energy-efficient battery-powere
 
 ### News
 #### Aug 25, 2022
-> The specific energy estimates were presented in a follow-up article in [The Wall Street Journal](https://www.wsj.com/articles/liliums-air-taxi-is-arriving-too-early-11661429432?reflink=desktopwebshare_permalink) by Jon Sindreu.
+> The specific energy estimates were presented in a follow-up [article](https://www.wsj.com/articles/liliums-air-taxi-is-arriving-too-early-11661429432?reflink=desktopwebshare_permalink) in The Wall Street Journal by Jon Sindreu.
 > <img src="news/wsj_2.png" alt="WSJ Sripad Viswanathan-2" width="400"/>
 
 #### Aug 11, 2022
