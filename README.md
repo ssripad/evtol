@@ -9,6 +9,9 @@ This repo accompanies the paper "[The promise of energy-efficient battery-powere
 > The specific energy estimates were presented in a follow-up article in [The Wall Street Journal](https://www.wsj.com/articles/liliums-air-taxi-is-arriving-too-early-11661429432?reflink=desktopwebshare_permalink) by Jon Sindreu.
 > <img src="news/wsj_2.png" alt="WSJ Sripad Viswanathan-2" width="400"/>
 
+#### Aug 11, 2022
+> Insights from the paper were featured in [The Fast Company](https://www.fastcompany.com/90776029/paul-mollers-50-year-dream-to-build-a-flying-car-wont-die).
+
 #### Jul 6, 2022
 > The Ragone plot from the work was featured in [The Wall Street Journal](https://www.wsj.com/articles/batteries-become-do-or-die-for-air-taxi-startups-11657098176?reflink=desktopwebshare_permalink) by Jon Sindreu. A new EVTOL VX4 from Vertical Aerospace was also shown in the list. 
 >
