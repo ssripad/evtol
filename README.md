@@ -11,6 +11,7 @@ This repo accompanies the paper "[The promise of energy-efficient battery-powere
 
 #### Jul 6, 2022
 > The Ragone plot from the work was featured in [The Wall Street Journal](https://www.wsj.com/articles/batteries-become-do-or-die-for-air-taxi-startups-11657098176?reflink=desktopwebshare_permalink) by Jon Sindreu. A new EVTOL VX4 from Vertical Aerospace was also shown in the list. 
+>
 > <img src="news/wsj_1.png" alt="WSJ Sripad Viswanathan-1" width="400"/>
 
 #### Dec 16, 2021
